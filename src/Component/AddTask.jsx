@@ -17,10 +17,9 @@ const AddTask = ({addTask}) => {
        
         <input type='text'  className='input ' placeholder='enter your task' value={value}  onChange={(e)=>{setValue(e.target.value)}} />
        
-        
-         {/* <br /> */}
+    
         <br />
-        {value?<i class="fa-sharp fa-solid fa-plus " onClick={addItem} ></i>:<i class="fa-sharp fa-solid fa-plus"></i>}
+        {value?<i class="fa-sharp fa-solid fa-plus " style={{cursor:'pointer',height:'50px'}} onClick={addItem} ></i>:<i class="fa-sharp fa-solid fa-plus" style={{cursor:'pointer'}}></i>}
          
        
     </div>
