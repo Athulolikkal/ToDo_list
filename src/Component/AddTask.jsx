@@ -4,7 +4,14 @@ const AddTask = ({ addTask }) => {
   const [value, setValue] = useState("");
 
   const addItem = () => {
-    addTask(value);
+   
+    const taskValue=value.trim()
+    
+   if(taskValue){
+      addTask(value);
+      setValue("");
+    } 
+  //  addTask(value);
     setValue("");
   };
 
